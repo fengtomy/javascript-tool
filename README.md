@@ -1,2 +1,2 @@
 # javascript-tool
-some neat functions to simplify javascript operations
+This repo includes some neat functions, which can simplify some operations in your projects.
