@@ -12,7 +12,18 @@ function getArrByKey(key, callback) {
   }
 }
 
+function validateObjectJSONFormat(jsonString) {
+  try {
+    const obj = JSON.parse(jsonString);
+    return typeof obj === "object" && !Array.isArray(obj);
+  } catch (error) {
+    return false;
+  }
+}
+
+
 module.exports = {
   returnValueOfSpecificProp,
-  getArrByKey
+  getArrByKey,
+  validateObjectJSONFormat
 };
